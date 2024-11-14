@@ -1,6 +1,57 @@
+import animals.Animal;
+import animals.Bowl;
+import animals.Cat;
+import animals.Dog;
+
 public class Main {
 
     public static void main(String[] args) {
+
+        task10();
+    }
+
+    public static void task10(){
+        // Создаем собак и котов
+        Dog dog1 = new Dog("Бобик");
+        Cat cat1 = new Cat("Мурзик");
+        Cat cat2 = new Cat("Барсик");
+        Cat cat3 = new Cat("Васька");
+
+        // Собаки и коты выполняют действия
+        dog1.run(150); // Собака Бобик пробегает 150 метров
+        dog1.swim(8);  // Собака Бобик плывет 8 метров
+
+        cat1.run(100); // Кот Мурзик пробегает 100 метров
+        cat1.swim(5);  // Кот Мурзик пытается плавать (не умеет)
+
+        // Создаем массив котов
+        Cat[] cats = {cat1, cat2, cat3};
+
+        // Создаем миску с 25 единицами еды
+        Bowl bowl = new Bowl(25);
+
+        // Коты пытаются поесть
+        for (Cat cat : cats) {
+            cat.eat(bowl, 10); // Каждый кот пытается съесть 10 единиц еды
+        }
+
+        // Выводим информацию о сытости котов
+        for (Cat cat : cats) {
+            System.out.println(cat.name + " сыт: " + cat.isFull());
+        }
+
+        // Добавляем 15 единиц еды в миску
+        bowl.addFood(15);
+        bowl.printFood(); // Выводим оставшееся количество еды
+
+        // Выводим общее количество созданных животных
+        System.out.println("Всего животных: " + Animal.getAnimalCount());
+        System.out.println("Всего собак: " + Dog.getDogCount());
+        System.out.println("Всего котов: " + Cat.getCatCount());
+    }
+
+
+    public static void task1(){
         // Вызов методов
         printThreeWords();  // 1. Вывод трех слов в столбец
         checkSumSign();     // 2. Проверка суммы чисел и вывод результата
@@ -23,6 +74,7 @@ public class Main {
 
         }
     }
+
 
     // 1. Печать трех слов в столбец
     public static void printThreeWords() {
