@@ -8,6 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
         task10();
+        task11();
     }
 
     public static void task10(){
@@ -50,6 +51,26 @@ public class Main {
         System.out.println("Всего котов: " + Cat.getCatCount());
     }
 
+    public static void task11(){
+
+        // Создаем круг
+        Shape circle = new Circle(5.0, "Красный", "Черный");
+        System.out.println("Круг:");
+        circle.displayCharacteristics();
+        System.out.println();
+
+        // Создаем прямоугольник
+        Shape rectangle = new Rectangle(4.0, 6.0, "Синий", "Белый");
+        System.out.println("Прямоугольник:");
+        rectangle.displayCharacteristics();
+        System.out.println();
+
+        // Создаем треугольник
+        Shape triangle = new Triangle(3.0, 4.0, 5.0, "Зеленый", "Желтый");
+        System.out.println("Треугольник:");
+        triangle.displayCharacteristics();
+
+    }
 
     public static void task1(){
         // Вызов методов
