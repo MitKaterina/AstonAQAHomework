@@ -16,13 +16,6 @@
 
     <!-- Зависимости для JUnit 5 и TestNG -->
     <dependencies>
-        <!-- JUnit 5 Dependency -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>5.9.3</version>
-            <scope>test</scope>
-        </dependency>
 
         <!-- TestNG Dependency -->
         <dependency>
