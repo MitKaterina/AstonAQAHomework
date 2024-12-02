@@ -14,9 +14,13 @@
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
-    <!-- Зависимости для JUnit 5-->
     <dependencies>
-        <!-- JUnit 5 Dependency -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.7.0</version>
+        </dependency>
+
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
@@ -24,7 +28,11 @@
             <scope>test</scope>
         </dependency>
 
-
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.18.1</version>
+        </dependency>
     </dependencies>
 </project>
 
