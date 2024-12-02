@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.example</groupId> <!-- Замените на ваш groupId -->
+    <groupId>com.example</groupId>
     <artifactId>AstonAQAHomework</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -14,7 +14,7 @@
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
-    <!-- Зависимости для JUnit 5 и TestNG -->
+    <!-- Зависимости для JUnit 5-->
     <dependencies>
         <!-- JUnit 5 Dependency -->
         <dependency>
@@ -24,12 +24,8 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- TestNG Dependency -->
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.8.0</version>
-            <scope>test</scope>
-        </dependency>
+
     </dependencies>
 </project>
+
+
